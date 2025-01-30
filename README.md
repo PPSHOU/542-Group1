@@ -22,7 +22,7 @@ Traversed the combined data to extract target fields and converted them to appro
 Aggregated the extracted fields into a new DataFrame.  Viewed the distribution of target fields and plotted distribution bar charts. Analyzed the results for meaningful insights.
 
 
-## Results and Interpretation:
+## Results and Interpretation
 
 ### **Issues vs. Discussions**
 The total number of issues is **1,750**, which is **seven times** more than the number of discussions (**250**). This indicates that more issues are encountered than discussions during the development of ChatGPT.
