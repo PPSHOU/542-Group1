@@ -12,27 +12,23 @@ Make sure you have installed the pandas and matplotlib packages before running t
 
 ## Methodology
 
-### **1. Load and Combine Data**
-Used Python to load 12 JSON files consisting of discussion and issue data. Combined the data in Jupyter Notebook and loaded it into a DataFrame using pandas. Displayed the basic information of the combined data.
+## 1. Load and Combine Data  
+Used Python to efficiently load 12 JSON files containing data on discussions and issues. Leveraging the `pandas` library, combined these JSON files into a single cohesive dataset within a Jupyter Notebook environment. Conducted initial data exploration by displaying essential information, such as column names, data types, and memory usage of the combined DataFrame. Verified data integrity by checking for missing values and ensuring all files were correctly loaded.
 
-### **2. Traverse Data and Extract Target Fields**
-Traversed the combined data to extract target fields and converted them to appropriate data types, such as **Type**, **RepoLanguage**, **Number**, and **UpvoteCount**.For the **Conversations** field, which is in a list structure, extracted the number of elements and recorded it as **Conversations_num**.
+## 2. Traverse Data and Extract Target Fields  
+Traversed the combined dataset systematically to extract specific target fields relevant to the analysis. These fields included `Type`, `RepoLanguage`, `Number`, and `UpvoteCount`. Converted data into appropriate types to ensure consistency and facilitate downstream analysis. For instance, numeric fields were converted to integers, and categorical fields were standardized. Special attention was given to the `Conversations` field, which presented data in a list structure. Extracted the count of elements in each list and recorded this as a new field, `Conversations_num`, representing the number of conversations for each record.
 
-### **3. Perform Statistical Analysis and Visualization**
-Aggregated the extracted fields into a new DataFrame.  Viewed the distribution of target fields and plotted distribution bar charts. Analyzed the results for meaningful insights.
+## 3. Perform Statistical Analysis and Visualization  
+Aggregated the extracted fields into a newly structured DataFrame for a more focused statistical analysis. Computed key statistical measures such as mean, median, and variance for numeric fields. Explored the distribution of target fields visually by plotting bar charts and histograms, enabling a clear understanding of patterns and trends. Insights derived from the visualizations were documented for meaningful interpretations, such as identifying the most common repository languages, trends in issue discussions, and the distribution of upvotes across records. These analyses provided valuable perspectives on the data and highlighted areas requiring further exploration.
 
 
 ## Results and Interpretation
 
-### **Issues vs. Discussions**
-The total number of issues is **1,750**, which is **seven times** more than the number of discussions (**250**). This indicates that more issues are encountered than discussions during the development of ChatGPT.
+### **Conversation Turn Analysis**  
+Upon analyzing the conversation data, it was observed that most conversations require **400 to 570 turns** to reach a meaningful conclusion or resolution. The **average number of turns per conversation** was found to be **4.85**, suggesting that although some conversations may involve a significant number of turns, most interactions are fairly concise. This pattern points toward efficiency in conversation handling, with many discussions being concluded after a relatively small number of turns.
 
-### **Conversation Turn Analysis**
-Most conversations require **400 to 570 turns** to reach a conclusion and the **average number of turns per conversation** is **4.85**.
+### **Upvote Count and Number Distribution**  
+The analysis of the UpvoteCount revealed that the **majority of conversations have an UpvoteCount of 0**, indicating limited engagement or popularity for most conversations. Only a small proportion of conversations received upvotes greater than zero, highlighting a selective interest in certain discussions. Additionally, the **Number** distribution predominantly falls between **20 and 122**, but the average value is notably higher at **1,510**, primarily due to the influence of outliers. These observations underline the presence of **outliers** in both "UpvoteCount" and "Number" metrics, despite the majority of data points remaining within expected ranges. The presence of such outliers calls for further investigation to understand their impact and origin.
 
-### **Upvote Count and Number Distribution**
-The **majority of conversations have an UpvoteCount of 0**, with only a small proportion having UpvoteCounts greater than 0 and the **Number** distribution mostly falls between **20 and 122**, while the average is **1,510** due to the influence of outliers.These observations indicate the presence of **outliers** in both "UpvoteCount" and "Number," although the majority of data points remain within normal ranges.
-
-### **Language Popularity**
-The top three most popular languages are **Python**, **TypeScript**, and **JavaScript**, which are far more popular than other languages.This suggests that these three languages are particularly suitable and appropriate for ChatGPT development.
-
+### **Language Popularity**  
+The top three most popular programming languages used in the dataset are **Python**, **TypeScript**, and **JavaScript**. These languages show a significantly higher usage frequency compared to other languages in the dataset. The dominance of these languages suggests that they are particularly suitable for the development and maintenance of ChatGPT. Their widespread popularity is likely due to their strong ecosystem support, versatility, and compatibility with machine learning, server-side logic, and web development tasks.
