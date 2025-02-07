@@ -12,7 +12,7 @@ project-root/
 │     
 ├── project_code1.ipynb              # Notebook covering general analysis or initial exploration     
 │     
-├── project_code2_Q2.ipynb           # Question 2:Identify patterns in the prompts developers use     
+├── project_code2_Q2.ipynb           # Analysis to Question 2:Identify patterns in the prompts developers use     
 │     
 ├── project_code3_Q7 explore.ipynb   # Analysis to Question 7:Predict the length of a conversation     
 │     
