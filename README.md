@@ -16,9 +16,9 @@ project-root/
 │     
 ├── project_code3_Q7 explore.ipynb   # Analysis to Question 7:Predict the length of a conversation     
 │     
-├── report.pdf                 # Final project report in PDF format     
+├── report.pdf                       # Final project report in PDF format     
 │     
-└── README.md                   # Project overview and instructions     
+└── README.md                        # Project overview and instructions     
 
 ## More about the files:     
 
