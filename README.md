@@ -11,13 +11,13 @@ This project presents an in-depth analysis of developer interactions with ChatGP
 project-root/     
 │     
 ├── project_code1.ipynb              # Notebook covering general analysis or initial exploration     
-│
+│     
 ├── project_code2_Q2.ipynb           # Notebook focused on Question 2  Identify patterns in the prompts developers use     
-│
+│     
 ├── project_code3_Q7 explore.ipynb   # Notebook for exploratory analysis related to Question 7 Predict the length of a conversation     
-│
+│     
 ├── report.pdf                 # Final project report in PDF format     
-│
+│     
 └── README.md                   # Project overview and instructions     
 
 ## More about the files:     
